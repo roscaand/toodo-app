@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #7aa5f5;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#add-btn {
+  background-color: #7aa5f5;
+  border: none;
+  padding: 0 1.2rem;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn:hover {
+  background-color: #4e8ef7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f7ff;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+li.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+li:hover {
+  background-color: #e1edff;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.delete-btn {
+  color: #f25268;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  color: #d9304f;
+}
+
+#clear-completed {
+  margin-top: 1rem;
+  background-color: #ff9999;
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#clear-completed:hover {
+  background-color: #ff6666;
+}
